@@ -18,8 +18,33 @@ console.log(lmh);
 
 // button.addEventListener("click", (event) => console.log(event));
 
-const sayHello = (name) => `Hello ${name}`;
+// const sayHello = (name) => `Hello ${name}`;
 
-const lmh = sayHello("MyeongHun");
+// const lmh = sayHello("MyeongHun");
 
-console.log(lmh);
+// console.log(lmh);
+
+const human = {
+  name: "mh",
+  lastName: "lee",
+  nationality: "korea",
+  favFood: {
+    breakfast: "Sam",
+    lunch: "Don",
+    dinner: "SamDon",
+  },
+};
+
+// const name = human.name;
+// const lastName = human.lastName;
+
+// const dinner = human.favFood.dinner;
+
+const {
+  name,
+  lastName,
+  nationality: difName,
+  favFood: { dinner, breakfast, lunch },
+} = human;
+
+console.log(name, lastName, difName, lunch, dinner, breakfast);
