@@ -111,8 +111,52 @@ const days = ["Mon", "Tue", "Wed", "Thur", "Fri"];
 
 // const smilingDays = days.map((day, index) => `#${index + 1}${day}`);
 
-const addNumber = (day, index) => `#${index + 1} ${day}`;
+// const addNumber = (day, index) => `#${index + 1} ${day}`;
 
-const smilingDays = days.map(addNumber);
+// const smilingDays = days.map(addNumber);
 
-console.log(smilingDays);
+// console.log(smilingDays);
+
+// const numbers = [
+//   5,
+//   1,
+//   4,
+//   32,
+//   5,
+//   44,
+//   156,
+//   8,
+//   4,
+//   1,
+//   65,
+//   18,
+//   964,
+//   6,
+//   51,
+//   3,
+//   1,
+//   8,
+//   9,
+//   8,
+//   7,
+// ];
+
+// const biggerThan15 = numbers.filter((number) => number > 15);
+
+// const testCondition = (number) => number > 15;
+
+// const biggerThan15 = numbers.filter(testCondition);
+
+// const smallerThan15 = numbers.filter((number) => number < 15);
+
+// console.log(biggerThan15);
+// console.log(smallerThan15);
+
+const posts = ["Hi", "Hello", "Bye"];
+
+const lengthThan4 = posts.filter((post) => post.length < 4);
+
+const notBye = posts.filter((post) => post != "Bye");
+
+console.log(lengthThan4);
+console.log(notBye);
