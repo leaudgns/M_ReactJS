@@ -75,28 +75,44 @@ console.log(lmh);
 // const two = { ...ab, ...ob };
 // console.log(two);
 
-class Human {
-  constructor(name, lastName) {
-    this.name = name;
-    this.lastName = lastName;
-  }
-}
+// class Human {
+//   constructor(name, lastName) {
+//     this.name = name;
+//     this.lastName = lastName;
+//   }
+// }
 
-const mh = new Human("mh", "lee");
+// const mh = new Human("mh", "lee");
 
-console.log(mh.name);
-console.log(mh);
+// console.log(mh.name);
+// console.log(mh);
 
-class Baby extends Human {
-  cry() {
-    console.log("Waaaaaaaa");
-  }
-  sayname() {
-    console.log(`My name is ${this.name}`);
-  }
-}
+// class Baby extends Human {
+//   cry() {
+//     console.log("Waaaaaaaa");
+//   }
+//   sayname() {
+//     console.log(`My name is ${this.name}`);
+//   }
+// }
 
-const myBaby = new Baby("mini", "me");
+// const myBaby = new Baby("mini", "me");
 
-console.log(myBaby);
-console.log(myBaby.cry(), myBaby.sayname());
+// console.log(myBaby);
+// console.log(myBaby.cry(), myBaby.sayname());
+
+const days = ["Mon", "Tue", "Wed", "Thur", "Fri"];
+
+// const smilingDays = days.map((potato) => `☆${potato}`);
+
+// const addSmile = (potato) => `☆${potato}`;
+
+// const smilingDays = days.map(addSmile);
+
+// const smilingDays = days.map((day, index) => `#${index + 1}${day}`);
+
+const addNumber = (day, index) => `#${index + 1} ${day}`;
+
+const smilingDays = days.map(addNumber);
+
+console.log(smilingDays);
