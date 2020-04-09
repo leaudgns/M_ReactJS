@@ -152,11 +152,29 @@ const days = ["Mon", "Tue", "Wed", "Thur", "Fri"];
 // console.log(biggerThan15);
 // console.log(smallerThan15);
 
-const posts = ["Hi", "Hello", "Bye"];
+// const posts = ["Hi", "Hello", "Bye"];
 
-const lengthThan4 = posts.filter((post) => post.length < 4);
+// const lengthThan4 = posts.filter((post) => post.length < 4);
 
-const notBye = posts.filter((post) => post != "Bye");
+// const notBye = posts.filter((post) => post != "Bye");
 
-console.log(lengthThan4);
-console.log(notBye);
+// console.log(lengthThan4);
+// console.log(notBye);
+
+// const posts = ["Hi", "Hello", "Bye"];
+
+// posts.forEach((post) => console.log(post));
+
+// posts.push("new");
+
+// console.log(posts);
+
+const greetings = ["Hi", "Howdy", "Suup"];
+
+if (!greetings.includes("Hello")) {
+  greetings.push("Hello");
+}
+
+console.log(greetings);
+
+console.log(greetings.reverse());
