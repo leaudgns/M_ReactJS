@@ -24,27 +24,53 @@ console.log(lmh);
 
 // console.log(lmh);
 
-const human = {
-  name: "mh",
-  lastName: "lee",
-  nationality: "korea",
-  favFood: {
-    breakfast: "Sam",
-    lunch: "Don",
-    dinner: "SamDon",
-  },
-};
+// const human = {
+//   name: "mh",
+//   lastName: "lee",
+//   nationality: "korea",
+//   favFood: {
+//     breakfast: "Sam",
+//     lunch: "Don",
+//     dinner: "SamDon",
+//   },
+// };
 
 // const name = human.name;
 // const lastName = human.lastName;
 
 // const dinner = human.favFood.dinner;
 
-const {
-  name,
-  lastName,
-  nationality: difName,
-  favFood: { dinner, breakfast, lunch },
-} = human;
+// const {
+//   name,
+//   lastName,
+//   nationality: difName,
+//   favFood: { dinner, breakfast, lunch },
+// } = human;
 
-console.log(name, lastName, difName, lunch, dinner, breakfast);
+// console.log(name, lastName, difName, lunch, dinner, breakfast);
+
+// const days = ["Mon", "Tue", "Wed"];
+
+// const otherDays = ["Thu", "Fri", "Sat"];
+
+// // const allDays = days + otherDays;
+// // const allDays = [days, otherDays];
+// const allDays = [...days, ...otherDays];
+
+// let allDayss = [days + otherDays];
+
+// console.log(allDays);
+
+// console.log(allDayss);
+
+const ab = {
+  first: "hi",
+  second: "hello",
+};
+
+const ob = {
+  third: "byebye",
+};
+
+const two = { ...ab, ...ob };
+console.log(two);
