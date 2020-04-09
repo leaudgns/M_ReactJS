@@ -63,14 +63,40 @@ console.log(lmh);
 
 // console.log(allDayss);
 
-const ab = {
-  first: "hi",
-  second: "hello",
-};
+// const ab = {
+//   first: "hi",
+//   second: "hello",
+// };
 
-const ob = {
-  third: "byebye",
-};
+// const ob = {
+//   third: "byebye",
+// };
 
-const two = { ...ab, ...ob };
-console.log(two);
+// const two = { ...ab, ...ob };
+// console.log(two);
+
+class Human {
+  constructor(name, lastName) {
+    this.name = name;
+    this.lastName = lastName;
+  }
+}
+
+const mh = new Human("mh", "lee");
+
+console.log(mh.name);
+console.log(mh);
+
+class Baby extends Human {
+  cry() {
+    console.log("Waaaaaaaa");
+  }
+  sayname() {
+    console.log(`My name is ${this.name}`);
+  }
+}
+
+const myBaby = new Baby("mini", "me");
+
+console.log(myBaby);
+console.log(myBaby.cry(), myBaby.sayname());
