@@ -11,7 +11,7 @@ import Search from "../Routes/Search";
 
 export default () => (
   <Router>
-    <Swihch>
+    <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/tv" exact component={TV} />
       <Route path="/tv/popular" render={() => <h1>Popular</h1>} />
