@@ -20,8 +20,8 @@ export default () => (
         <Route path="/tv" exact component={TV} />
         <Route path="/tv/popular" render={() => <h1>Popular</h1>} />
         <Route path="/search" exact component={Search} />
-        <Route path="/movie/:id" component={Detail} />
-        <Route path="/show/:id" component={Detail} />
+        <Route path="/movie/:potato" component={Detail} />
+        <Route path="/show/:potato" component={Detail} />
         <Redirect from="*" to="/" />
       </Switch>
     </>
