@@ -13,14 +13,15 @@ const Image = styled.div`
   background-size: cover;
   border-radius: 4px;
   background-position: center center;
-  transition: opacity 0.3s linear;
+  transition: opacity 0.1s linear;
 `;
 
 const Rating = styled.span`
-  bottom: -2px;
-  border-right-color;
-  position:absolute;
-  opacity:0;
+  bottom: 5px;
+  right: 5px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.1s linear;
 `;
 
 const ImageContainer = styled.div`
@@ -57,6 +58,7 @@ const Poster = ({ id, imageUrl, title, rating, year, isMovie = false }) => (
               : require("../Components/pic.jpg")
           }
         />
+
         <Rating>
           <span role="img" aria-label="rating">
             ⭐️
@@ -65,7 +67,7 @@ const Poster = ({ id, imageUrl, title, rating, year, isMovie = false }) => (
         </Rating>
       </ImageContainer>
       <Title>
-        {title.length > 18 ? `${title.substring(0, 15)}...` : title}
+        {title.length > 18 ? `${title.substring(0, 18)}...` : title}
       </Title>
       <Year>{year}</Year>
     </Container>
